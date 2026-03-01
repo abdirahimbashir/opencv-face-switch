@@ -50,7 +50,7 @@ Arduino Pin 7 -----> [220Ω Resistor] -----> LED(+) -----> LED(-) -----> GND
 
 
 ### Step 2: Install Python Dependencies
-```bash
+
 pip install opencv-python pyserial numpy
 
 Step 3: Arduino Code
@@ -332,4 +332,5 @@ Brightness control based on face distance
 
 👤 Author
 Abdirahim Bashir
+
 
