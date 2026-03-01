@@ -1,5 +1,10 @@
 # OpenCV Face Switch
 ![Image](https://github.com/user-attachments/assets/4c0a69ac-c620-41de-a818-6543c58a82b8)
+
+
+
+
+
 [![Python](https://img.shields.io/badge/Python-3.7%2B-blue)](https://www.python.org/)
 [![OpenCV](https://img.shields.io/badge/OpenCV-4.5%2B-green)](https://opencv.org/)
 [![Arduino](https://img.shields.io/badge/Arduino-Uno%2FNano-orange)](https://www.arduino.cc/)
