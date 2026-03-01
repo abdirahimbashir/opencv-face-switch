@@ -56,6 +56,105 @@ pip install opencv-python pyserial numpy
 Step 3: Arduino Code
 Copy and upload this code to your Arduino:
 
+Step 4: Python Code
+Save this as face_switch.py:
+
+#!/usr/bin/env python3
+"""
+OpenCV Face Switch - Main Program
+Controls Arduino LED based on face detection
+"""
+Step 5: Requirements File
+Save this as requirements.txt:
+
+opencv-python>=4.5.0
+pyserial>=3.4
+numpy>=1.19.0
+
+🚀 Quick Start Guide
+Wire the circuit as shown above
+
+Upload Arduino code to your board
+
+Update the port in Python code (line 14): Change COM6 to your port
+
+Windows: COM3, COM4, etc.
+
+Linux: /dev/ttyUSB0, /dev/ttyACM0
+
+Mac: /dev/cu.usbmodem*
+
+Install dependencies: pip install -r requirements.txt
+
+Run the program: python face_switch.py
+
+Show your face to the camera to turn LED ON
+
+Press 'q' to quit
+
+📊 Troubleshooting
+Problem	Solution
+Arduino not connecting	Check port number, close Arduino IDE, restart program
+Camera not working	Check connections, try camera_id=1 in code
+No face detection	Adjust lighting, face camera directly, check distance
+LED not turning on	Check wiring, resistor value, Arduino pin
+Slow performance	Reduce camera resolution, close other programs
+
+opencv-face-switch/
+│
+├── face_switch.py          # Main Python program
+├── face_switch.ino         # Arduino code
+├── requirements.txt        # Python dependencies
+├── README.md               # This file
+└── LICENSE                 # MIT License
+
+🔄 How It Works
+Webcam captures video frames in real-time
+
+OpenCV detects faces using Haar Cascade classifier
+
+Python sends 'H' (ON) or 'L' (OFF) via serial port
+
+Arduino receives command and controls LED
+
+Display shows detection status and visual feedback
+
+ Learning Outcomes
+Computer vision fundamentals with OpenCV
+
+Serial communication between Python and Arduino
+
+Hardware-software integration
+
+Real-time image processing
+
+Event-driven programming
+
+IoT concepts and implementation
+
+🚀 Future Enhancements
+Multiple face detection and counting
+
+Face recognition for personalized control
+
+Web interface for remote monitoring
+
+Mobile app control
+
+Cloud data logging
+
+Gesture recognition
+
+Multiple LED control
+
+Brightness control based on face distance
+
+
+👤 Author
+Abdirahim Bashir
+
+Here is the codes neeeded for project
+```cpp
 /*
  * OpenCV Face Switch - Arduino Firmware
  * Commands: 'H' - LED ON, 'L' - LED OFF
@@ -85,16 +184,7 @@ void loop() {
         }
     }
     delay(10);
-}
-
-Step 4: Python Code
-Save this as face_switch.py:
-
-#!/usr/bin/env python3
-"""
-OpenCV Face Switch - Main Program
-Controls Arduino LED based on face detection
-"""
+}"
 
 import cv2
 import serial
@@ -243,94 +333,6 @@ if __name__ == "__main__":
     app = FaceSwitch()
     app.run()
 
-Step 5: Requirements File
-Save this as requirements.txt:
 
-opencv-python>=4.5.0
-pyserial>=3.4
-numpy>=1.19.0
-
-🚀 Quick Start Guide
-Wire the circuit as shown above
-
-Upload Arduino code to your board
-
-Update the port in Python code (line 14): Change COM6 to your port
-
-Windows: COM3, COM4, etc.
-
-Linux: /dev/ttyUSB0, /dev/ttyACM0
-
-Mac: /dev/cu.usbmodem*
-
-Install dependencies: pip install -r requirements.txt
-
-Run the program: python face_switch.py
-
-Show your face to the camera to turn LED ON
-
-Press 'q' to quit
-
-📊 Troubleshooting
-Problem	Solution
-Arduino not connecting	Check port number, close Arduino IDE, restart program
-Camera not working	Check connections, try camera_id=1 in code
-No face detection	Adjust lighting, face camera directly, check distance
-LED not turning on	Check wiring, resistor value, Arduino pin
-Slow performance	Reduce camera resolution, close other programs
-
-opencv-face-switch/
-│
-├── face_switch.py          # Main Python program
-├── face_switch.ino         # Arduino code
-├── requirements.txt        # Python dependencies
-├── README.md               # This file
-└── LICENSE                 # MIT License
-
-
-🔄 How It Works
-Webcam captures video frames in real-time
-
-OpenCV detects faces using Haar Cascade classifier
-
-Python sends 'H' (ON) or 'L' (OFF) via serial port
-
-Arduino receives command and controls LED
-
-Display shows detection status and visual feedback
-
- Learning Outcomes
-Computer vision fundamentals with OpenCV
-
-Serial communication between Python and Arduino
-
-Hardware-software integration
-
-Real-time image processing
-
-Event-driven programming
-
-IoT concepts and implementation
-
-🚀 Future Enhancements
-Multiple face detection and counting
-
-Face recognition for personalized control
-
-Web interface for remote monitoring
-
-Mobile app control
-
-Cloud data logging
-
-Gesture recognition
-
-Multiple LED control
-
-Brightness control based on face distance
-
-
-👤 Author
-Abdirahim Bashir
 
 
