@@ -1,7 +1,5 @@
 # OpenCV Face Switch
 
-![Project Demo](https://via.placeholder.com/800x400.png?text=OpenCV+Face+Switch+Demo)
-
 [![Python](https://img.shields.io/badge/Python-3.7%2B-blue)](https://www.python.org/)
 [![OpenCV](https://img.shields.io/badge/OpenCV-4.5%2B-green)](https://opencv.org/)
 [![Arduino](https://img.shields.io/badge/Arduino-Uno%2FNano-orange)](https://www.arduino.cc/)
