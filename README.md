@@ -59,12 +59,12 @@ Arduino Pin 7 -----> [220Ω Resistor] -----> LED(+) -----> LED(-) -----> GND
 
 ### Step 2: Install Python Dependencies
 
-pip install opencv-python pyserial numpy
+. pip install opencv-python pyserial numpy
 
-Step 3: Arduino Code
-Copy and upload this code to your Arduino:
+ - Step 3: Arduino Code
+ Copy and upload this code to your Arduino:
 
-Step 4: Python Code
+- Step 4: Python Code
 Save this as face_switch.py:
 
 #!/usr/bin/env python3
@@ -158,7 +158,7 @@ Multiple LED control
 Brightness control based on face distance
 
 
-👤 Author
+   👤 Author
 Abdirahim Bashir
 
 Here is the codes neeeded for project
